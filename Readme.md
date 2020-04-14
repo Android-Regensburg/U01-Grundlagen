@@ -1,19 +1,23 @@
-# U01 | Grundlagen
+---
+title: Einführung in die Entwicklungsumgebung Android Studio
+author: Zuletzt bearbeitet von Alexander Bazo
+documentclass: scrartcl
+classoption:
+  - a4paper
+header-includes: |
+    \usepackage{german} 
+    \usepackage[a4paper,left=2.5cm, right=2.5cm,top=2.5cm, bottom=3cm]{geometry}
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \rhead{Mobile Apps für Android}
+    \lhead{Übungsaufgaben}
+    \cfoot{\includegraphics[height=2cm]{docs/footer.png}}
+---
 
-![Cover für die erste Übungsaufgabe](./docs/cover.png)
+# U01 | Grundlagen und Einführung in die Entwicklungsumgebung Android Studio
 
-Dieses Repository dient als Vorlage für die Übungsaufgaben des Android-Kurses. Im `master`-Branch des
-Repositorys befindet sich das Starterpaket, das als Ausgangslage für die Bearbeitung durch die Studierenden
-dient. Die Aufgabenbeschreibung wird in der `Readme.md`-Datei verfasst. Zugehörige Dateien, z.B. Bilder
-oder Videos, werden im Ordner `/docs` abgelegt. Der fertige Lösungsvorschlag wird auf Basis des Starterpakets
-in einem separaten Branch `solution` gepflegt. **Dieser Abschnitt wird durch eine kurze Beschreibung der
-jeweiligen Aufgabe ersetzt. Unter der Kurzbeschreibung wird ein aussagekräftiger Screenshot der zu
-entwickelnden Anwendung platziert.**
-
-## Downloads
-
-- [Download des Starterpakets](https://github.com/Android-Regensburg/U01-Grundlagen/archive/master.zip)
-- [Download des Lösungsvorschlag](https://github.com/Android-Regensburg/U01-Grundlagen/archive/solution.zip)
+![](./docs/cover.png)
 
 ## Voraussetzungen
 
