@@ -101,9 +101,9 @@ Ihre App wird nun auf dem Emulator oder dem angeschlossenen Gerät installiert u
 
 ### Erste Modifikationen
 
-Schauen Sie sich nun die Datei `activity_main.xml` an. Hier finden Sie die Definition für das Textfeld, dass den *Hello world!*-Text beinhaltet. Der Text selber wird über das XML-Attribut `text` gesetzt. In diesem Beispiel wird der anzuzeigende Text nicht direkt angegeben, sondern durch einen Verweis dargestellt. Ressourcen, auch Text, können in gesonderten Dateien zentral gespeichert und dann von verschiedenen Stellen referenziert werden. Der hier verwendete Text- Baustein `hello_world` wird in der Datei `res/values/strings.xml` definiert. Öffnen Sie diese Datei, versuchen Sie den definierten Text zu ändern und führen Sie ihre Applikation erneut aus.
+Schauen Sie sich nun die Datei `activity_main.xml` an. Hier finden Sie die Definition für das Textfeld, dass den *Hello world!*-Text beinhaltet. Der Text selber wird über das XML-Attribut `text` gesetzt. In diesem Beispiel wird der anzuzeigende Text direkt angegeben, kann aber auch durch einen Verweis auf eine Ressourcen-Datei angegeben werden. Ressourcen, auch Text, sollten in gesonderten Dateien und zentral gespeichert und dann von verschiedenen Stellen referenziert werden. Text-Bausteine werden in der Regel in der Datei `res/values/strings.xml` definiert. Öffnen Sie diese Datei, erstellen Sie einen zusätzlichen String-Eintrag mit dem Namen `my_new_string` und einem beliebigem Inhalt (Verwenden Sie als Vorlage den vorhandenen Eintrag für den Anwendungsnamen). Verwenden Sie diesen dann anstelle des "Hello World"-Texts in der Layout-Datei.
 
-**Inhalt von `activity_main.xml`**
+**Inhalt von `activity_main.xml` nach der ersten Modifikation**
 
 ``` xml
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -117,7 +117,7 @@ Schauen Sie sich nun die Datei `activity_main.xml` an. Hier finden Sie die Defin
    <TextView
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="@string/hello_world"/>
+      android:text="@string/my_new_string"/>
 
 </RelativeLayout>
 ```
