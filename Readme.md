@@ -1,25 +1,3 @@
----
-title: Einführung in die Entwicklungsumgebung Android Studio
-author: Zuletzt bearbeitet von Alexander Bazo
-documentclass: scrartcl
-classoption:
-  - a4paper
-header-includes: |
-    \usepackage{german} 
-    \usepackage[a4paper,left=2.5cm, right=2.5cm,top=2.5cm, bottom=3cm]{geometry}
-    \usepackage{fancyhdr}
-    \pagestyle{fancy}
-    \fancyhf{}
-    \rhead{Mobile Apps für Android}
-    \lhead{Übungsaufgaben}
-    \cfoot{\includegraphics[height=2cm]{docs/footer.png}}
-    \fancypagestyle{plain}{
-      \fancyhf{}
-      \rhead{Mobile Apps für Android}
-      \lhead{Übungsaufgaben}
-      \cfoot[C]{\includegraphics[height=2cm]{docs/footer.png}}}
----
-
 # U01 | Grundlagen und Einführung in die Entwicklungsumgebung Android Studio
 
 ![](./docs/cover.png)
