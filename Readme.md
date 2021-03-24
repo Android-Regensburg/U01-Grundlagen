@@ -1,32 +1,6 @@
----
-title: Einführung in die Entwicklungsumgebung Android Studio
-author: Zuletzt bearbeitet von Alexander Bazo
-documentclass: scrartcl
-classoption:
-  - a4paper
-header-includes: |
-    \usepackage{german} 
-    \usepackage[a4paper,left=2.5cm, right=2.5cm,top=2.5cm, bottom=3cm]{geometry}
-    \usepackage{fancyhdr}
-    \pagestyle{fancy}
-    \fancyhf{}
-    \rhead{Mobile Apps für Android}
-    \lhead{Übungsaufgaben}
-    \cfoot{\includegraphics[height=2cm]{docs/footer.png}}
-    \fancypagestyle{plain}{
-      \fancyhf{}
-      \rhead{Mobile Apps für Android}
-      \lhead{Übungsaufgaben}
-      \cfoot[C]{\includegraphics[height=2cm]{docs/footer.png}}}
----
-
 # U01 | Grundlagen und Einführung in die Entwicklungsumgebung Android Studio
 
-![](./docs/cover.png)
-
 Für die Entwicklung von Android-Anwendungen sind eine Reihe von Schritten und entsprechende Materialien notwendig: Sie müssen den Quellcode Ihrer Anwendung mit einer Programmiersprache (in diesem Kurs verwenden wir *Java*, native Android-Apps können aber auch auf Basis von *Kotlin* entwickelt werden) verfassen, dabei die von Google bereitgestellten Bibliotheken (*APIs*) nutzen, Bild- und andere Medieninhalte in Ihr *User Interface* integrieren und am Ende alle diese Inhalte in einem Format bereitstellen, das die Installation der Anwendung auf einem Smartphone erlaubt. Schließlich müssen wir die *App* auf dieses Smartphone übertragen und dort testen. Diese Schritte, die wir zum Teil wiederholt durchführen müssen, sind aufwendig und komplex. Wir bedienen uns daher einer *Integrierten Entwicklungsumgebung* (IDE), die uns wesentlich beim Programmieren, Kompilieren, Testen und Installieren von Android-Apps unterstützt. In diesem Kursen nutzten wir [Android Studio](https://developer.android.com/studio), das offiziellen Entwicklungswerkzeug, das uns und anderen EntwicklerInnen von der Firma Google, dem Entwickler der Android-Plattform, bereitgestellt wird. 
-
-\pagebreak
 
 **Im Rahmen dieser Übung gewinnen Sie einen ersten Überblick über die Entwicklungsumgebung *Android Studio* und machen sich mit den wesentlichen Bestandteilen und Funktionen vertraut. Sie lernen wie Sie die Entwicklungsumgebung und einen Emulator für das Testen Ihrer Anwendungen installieren und einrichten. Anhand eines ersten, eigenen *Hello World*-Projekts testen Sie, ob Sie Ihre Arbeitsumgebung korrekt eingerichtet haben.**
 
