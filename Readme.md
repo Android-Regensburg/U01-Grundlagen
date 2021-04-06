@@ -20,11 +20,15 @@ Neben dieser Klassenbibliothek beinhaltet das SDK eine Reihe von weiteren **Tool
 
 ![Toolbar des Android Studios mit VDM und SDK Manager](./docs/screenshot-u01-1-toolbar.png "Zugriff auf den Virtual Device Manager und SDK Manager unter *Android Studio*")
 
+Zugriff auf den Virtual Device Manager und SDK Manager unter *Android Studio*
+
 ### User Interface-Editor
 
 Einige der zentralen Elemente eines Android-Projektes werden über XML-Dateien konfiguriert bzw. erstellt. Dazu gehören Layout-Modelle für das *User Interface*, wiederverwendbare Texte oder allgemeine Informationen zu Ihrer Anwendung (*Manifest*). Für Layout-Dateien stellt ihnen *Android Studio* einen zusätzlichen Editor zur Verfügung: Sie können diese Dateien entweder direkt durch Modifikation des XMLs verändern oder einen graphischen Editor nutzen. Zwischen diesen beiden Ansichten können Sie über die Schaltflächen rechts oben im Editor hin und her wechseln. Über den Eintrag `Show Layout Decorations` im Menü hinter dem *Augen*-Symbol (links oben) können Sie die restlichen Elemente des Android-Bildschirms zur Vorschau hinzufügen. 
 
-![Graphischer Layout-Editor des Android Studios](./docs/screenshot-u01-2-layout-editor.png "Wechsel zwischen graphischem Editor *Design) und XML-Code (Text)")
+![Graphischer Layout-Editor des Android Studios](./docs/screenshot-u01-2-layout-editor.png "Wechsel zwischen graphischem Editor (Design) und XML-Code (Text)")
+
+Wechsel zwischen graphischem Editor (*Design*) und XML-Code (Text)
 
 ### Emulatoren
 
@@ -47,6 +51,8 @@ Interessant wird es bei den *SDK Components*. Wählen Sie hier unbedingt auch da
 Das jetzt folgende Herunterladen der Inhalte kann je nach Internetverbindung etwas dauern.
 
 ![Android Studio: Installation und Einrichtung](./docs/screenshot-android-studio-setup-walkthrough.png "Android Studio: Installation und Einrichtung")
+
+Android Studio: Installation und Einrichtung
 
 ## Die erste App: Ein neues Projekt anlegen
 
@@ -97,3 +103,5 @@ Schauen Sie sich nun die Datei `activity_main.xml` an. Hier finden Sie die Defin
 ```
 
 ![Screenshot der ersten App](./docs/screenshot-u01-3-hello-world-app.png "Startbildschirm der ersten App")
+
+Startbildschirm der ersten App
