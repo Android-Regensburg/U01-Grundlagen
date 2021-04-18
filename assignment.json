@@ -1,7 +1,7 @@
 {
   "title": "Grundlagen",
   "abstract": "Im Rahmen dieser Übung gewinnen Sie einen ersten Überblick über die Entwicklungsumgebung Android Studio und machen sich mit den wesentlichen Bestandteilen und Funktionen vertraut. Sie lernen wie Sie die Entwicklungsumgebung und einen Emulator für das Testen Ihrer Anwendungen installieren und einrichten. Anhand eines ersten, eigenen Hello World-Projekts testen Sie, ob Sie Ihre Arbeitsumgebung korrekt eingerichtet haben.",
-  "hasStarterCode": true,
-  "hasSolutionCode": true,
-  "solutionAvailableOn": "2021-04-17"
+  "hasStarterCode": false,
+  "hasSolutionCode": false,
+  "solutionAvailableOn": ""
 }
