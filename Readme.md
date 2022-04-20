@@ -2,7 +2,7 @@
 
 Für die Entwicklung von Android-Anwendungen sind eine Reihe von Schritten und entsprechende Materialien notwendig: Sie müssen den Quellcode Ihrer Anwendung mit einer Programmiersprache (in diesem Kurs verwenden wir *Java*, native Android-Apps können aber auch auf Basis von *Kotlin* entwickelt werden) verfassen, dabei die von Google bereitgestellten Bibliotheken (*APIs*) nutzen, Bild- und andere Medieninhalte in Ihr *User Interface* integrieren und am Ende alle diese Inhalte in einem Format bereitstellen, das die Installation der Anwendung auf einem Smartphone erlaubt. Schließlich müssen wir die *App* auf dieses Smartphone übertragen und dort testen. Diese Schritte, die wir zum Teil wiederholt durchführen müssen, sind aufwendig und komplex. Wir bedienen uns daher einer *Integrierten Entwicklungsumgebung* (IDE), die uns wesentlich beim Programmieren, Kompilieren, Testen und Installieren von Android-Apps unterstützt. In diesem Kursen nutzten wir [Android Studio](https://developer.android.com/studio), das offiziellen Entwicklungswerkzeug, das uns und anderen EntwicklerInnen von der Firma Google, dem Entwickler der Android-Plattform, bereitgestellt wird. 
 
-**Im Rahmen dieser Übung gewinnen Sie einen ersten Überblick über die Entwicklungsumgebung *Android Studio* und machen sich mit den wesentlichen Bestandteilen und Funktionen vertraut. Sie lernen wie Sie die Entwicklungsumgebung und einen Emulator für das Testen Ihrer Anwendungen installieren und einrichten. Anhand eines ersten, eigenen *Hello World*-Projekts testen Sie, ob Sie Ihre Arbeitsumgebung korrekt eingerichtet haben.**
+**Im Rahmen dieser Übung gewinnen Sie einen ersten Überblick über die Entwicklungsumgebung *Android Studio* und machen sich mit den wesentlichen Bestandteilen und Funktionen vertraut. Sie lernen wie Sie die Entwicklungsumgebung und einen Emulator für das Testen Ihrer Anwendungen installieren und einrichten. Anhand eines ersten, eigenen *Hello World*-Projekts testen Sie, ob Sie Ihre Arbeitsumgebung korrekt eingerichtet haben. Auf dem ersten Übungsblatt vermitteln wir Ihnen viel Hintergrundwissen zum Umgang mit Android Studio. Die nächsten Übungsaufgaben werden sich stärker auf das eigentliche Entwickeln von Android-Anwendungen fokussieren.**
 
 ## Android Studio
 
@@ -10,9 +10,9 @@ Für die Entwicklung von Android-Anwendungen sind eine Reihe von Schritten und e
 
 ### Android Software Development Kit (SDK)
 
-![Android Studio](./docs/screenshot-android-studio-complete.png "Android Studio")
-
-Android Studio
+| Android Studio |
+|:------:|
+| ![Android Studio](./docs/screenshot-android-studio-complete.png "Android Studio") |
 
 Beim Entwickeln von Android-Anwendungen müssen Sie das Rad nicht neu erfinden. Das **Android Software Development Kit** stellt die Klassen und *APIs* zur Verfügung, die Sie benötigen um z.B. Anwendungen und deren sichtbare Schaltfächern zu erstellen. Dabei handelt es sich um eine Klassen- bzw. Systembibliothek. Dieses Konzept kennen Sie so auch aus anderen Java-Bereichen: *Zur Ausgabe von Text haben Sie `System.out.println` verwendet, statt diese Funktionalität selber zu schreiben. Ein Anwendungsfenster erstellen wir auf Basis eines `JFrames`*. In diesem Fall werden Ihnen statt *Frames* oder Konsolenfenster die zentralen Bausteine für Android-Apps, z.B. Buttons, Listen oder Klassen für den Zugriff auf die Kamera oder die Internetverbindung des Smartphones bereitgestellt.
 
@@ -20,17 +20,17 @@ Es existieren verschiedene offizielle Versionen des Android-Systems. Da nicht al
 
 Neben dieser Klassenbibliothek beinhaltet das SDK eine Reihe von weiteren **Tools**, mit denen Sie sehr einfach Anwendungen debuggen und testen und dazu auf Emulatoren oder realen Android-Geräten installieren und ausführen können. Die einzelnen Tools können auch außerhalb von *Android Studio* genutzt werden. Der genaue Pfad auf ihrem Computer hängt von Ihrem Betriebssystem und der Art der SDK-Installation ab. Die Tools finden Sie in *Android Studio* unter dem Menüpunkt *Tools* und dann *Android* bzw. über die entsprechenden Symbole in der Leiste unter den Menüs.
 
-![Toolbar des Android Studios mit VDM und SDK Manager](./docs/screenshot-u01-1-toolbar.png "Zugriff auf den Virtual Device Manager und SDK Manager unter *Android Studio*")
-
-Zugriff auf den Virtual Device Manager und SDK Manager unter *Android Studio*
+| Zugriff auf den Virtual Device Manager und SDK Manager unter *Android Studio* |
+|:------:|
+| ![Toolbar des Android Studios mit VDM und SDK Manager](./docs/screenshot-u01-1-toolbar.png "Zugriff auf den Virtual Device Manager und SDK Manager unter *Android Studio*") |
 
 ### User Interface-Editor
 
-Einige der zentralen Elemente eines Android-Projektes werden über XML-Dateien konfiguriert bzw. erstellt. Dazu gehören Layout-Modelle für das *User Interface*, wiederverwendbare Texte oder allgemeine Informationen zu Ihrer Anwendung (*Manifest*). Für Layout-Dateien stellt ihnen *Android Studio* einen zusätzlichen Editor zur Verfügung: Sie können diese Dateien entweder direkt durch Modifikation des XMLs verändern oder einen graphischen Editor nutzen. Zwischen diesen beiden Ansichten können Sie über die Schaltflächen rechts oben im Editor hin und her wechseln. Über den Eintrag `Show Layout Decorations` im Menü hinter dem *Augen*-Symbol (links oben) können Sie die restlichen Elemente des Android-Bildschirms zur Vorschau hinzufügen. 
+Einige der zentralen Elemente eines Android-Projektes werden über XML-Dateien konfiguriert bzw. erstellt. Dazu gehören Layout-Modelle für das *User Interface*, wiederverwendbare Texte oder allgemeine Informationen zu Ihrer Anwendung (*Manifest*). Für Layout-Dateien stellt ihnen *Android Studio* einen zusätzlichen Editor zur Verfügung: Sie können diese Dateien entweder direkt durch Modifikation des XMLs verändern oder einen graphischen Editor nutzen. Zwischen diesen beiden Ansichten können Sie über die Schaltflächen rechts oben im Editor hin und her wechseln. Über das Menü direkt über der Layout-Ansicht können Sie die weitere Optionen des Editors ein- und ausschalten. 
 
-![Graphischer Layout-Editor des Android Studios](./docs/screenshot-u01-2-layout-editor.png "Wechsel zwischen graphischem Editor (Design) und XML-Code (Text)")
-
-Wechsel zwischen graphischem Editor (*Design*) und XML-Code (Text)
+| Wechsel zwischen graphischem Editor (*Design*) und XML-Code (Text) |
+|:------:|
+| ![Graphischer Layout-Editor des Android Studios](./docs/screenshot-u01-2-layout-editor.png "Wechsel zwischen graphischem Editor (Design) und XML-Code (Text)") |
 
 ### Emulatoren
 
@@ -40,7 +40,7 @@ Das Android-SDK verfügt über einen [Emulator](https://de.wikipedia.org/wiki/Em
 
 ## Android auf dem eigenen Rechner
 
-Die passende Version von *Android Studio* für Ihren Rechner finden Sie auf [dieser Website](https://developer.android.com/studio#downloads). Laden Sie die entsprechende Datei, für Windows wäre es in den meisten Fällen die 64-bit Version des *Installers* (`android-studio-ide-192.6308749-windows.exe`), herunter und installieren Sie das Programm auf Ihrem Rechner. Vor dem Herunterladen müssen Sie den Lizenzbedingungen zustimmen. 
+Die passende Version von *Android Studio* für Ihren Rechner finden Sie auf [dieser Website](https://developer.android.com/studio#downloads). Laden Sie die entsprechende Datei, für Windows wäre es in den meisten Fällen die 64-bit Version des *Installers* (`android-studio-2021.1.1.23-windows.exe`), herunter und installieren Sie das Programm auf Ihrem Rechner. Vor dem Herunterladen müssen Sie den Lizenzbedingungen zustimmen. 
 
 Der *Installer* leitet Sie durch den Installationsprozess und startet im Anschluss automatisch *Android Studio*.
 
@@ -52,11 +52,11 @@ Interessant wird es bei den *SDK Components*. Wählen Sie hier unbedingt auch da
 
 Das jetzt folgende Herunterladen der Inhalte kann je nach Internetverbindung etwas dauern.
 
-![Android Studio: Installation und Einrichtung](./docs/screenshot-android-studio-setup-walkthrough.png "Android Studio: Installation und Einrichtung")
+## Die erste App: Hello Android
 
-Android Studio: Installation und Einrichtung
+Wir beginnen ganz einfach: Zum Abschluss dieser Übung erstellen Sie ein neues Android-Projekt und führen die von *Android Studio* automatisch erstelle Anwendung auf einem Emulator aus. Anschließend ändern wir den in der Anwendung angezeigten Text und führen die veränderte App erneut aus.
 
-## Die erste App: Ein neues Projekt anlegen
+### Schritt 1: Ein neues Projekt anlegen
 
 Klicken sie auf dem Willkommen-Screen von *Android Studio* auf `Start a new Android Studio project` bzw. auf in der Menüleiste auf `File` und dann `New Project...`, falls derzeit gerade ein Projekt geöffnet ist. 
 
@@ -69,41 +69,51 @@ Im folgenden Schritt werden grundlegende Daten für die App abgefragt:
 - **Package Name**: Dieser Bezeichner soll Ihre App eindeutig identifizieren und ist von zentraler Bedeutung für ihre App selbst, aber auch für das mögliche Zusammenspiel mit anderen Applikationen. Er wird standardmäßig automatisch aus dem Namen der Anwendung und der Firmendomain erstellt, aber per Klick auf *edit* ist eine nachträgliche Veränderung möglich. Der *Package Name* wird  in Form einer vereinfachten URI angegeben (Beispielsweise: `de.ur.mi.android.helloandroid`). Verbreitet ist hier das Schema der *Reversed URL*, also der umgedrehten Webadresse mit einer abschließenden Ergänzung für die jeweilige Applikation.
 - **Save location**: Hier geben Sie den Ort auf Ihrer Festplatte an, an dem die Projektdateien für diese Anwendung gespeichert werden sollen. Wenn Sie uns, z.B. bei technischen Fragen, den Code zukommen lassen wollen, können Sie diesen Order, gepackt als ZIP-Datei, an uns senden. Wir können das Projekt dann an unseren Rechnern öffnen und ausprobieren.
 - **Language**: Android-Anwendungen können mit den Programmiersprachen Java oder Kotlin erstellt werden. Bitte wählen Sie hier `Java` aus.
-- **Minimum SDK**:  Wählen Sie in der Liste *API 26* aus. Damit geben Sie an, dass Ihre Anwendung auf allen Geräten funktionieren wird, die mindestens diese Android-Version (*Android 8*) verwenden.
+- **Minimum SDK**:  Wählen Sie in der Liste *API 29* aus. Damit geben Sie an, dass Ihre Anwendung auf allen Geräten funktionieren wird, die mindestens diese Android-Version (*Android 10*) verwenden.
 
-Der Klick auf den *Button* `Finish` schließt die Einrichtung ab und erstellt das Projekt. Nach kurzer Ladezeit sehen Sie jetzt das erste Mal die vollständige Entwicklungsumgebung und können mit der Arbeit an Ihrer ersten Anwendung beginnen.
+Der Klick auf den *Button* `Finish` schließt die Einrichtung ab und erstellt das Projekt. Nach dem Öffnen des neuen Projekts beginnt *Android Studio* damit, das Projekt im Hintergrund für die weitere Bearbeitung vorzubereiten. Je nach Leistungsstärker Ihres Rechners kann das etwas dauern. Sobald die Fortschrittsanzeigen rechts unten in der Entwicklungsumgebung verschwunden sind, ist der Vorgang abgeschlossen und Sie können mit der Arbeit am Projekt beginnen.
 
 In der Dateiliste auf der linken Seite finden sie unter `app`,  `java`, `<paketname>`, `MainActivity.java` ihre erste *Activity*. Eine *Activity* bündelt die Logik einer bestimmten, sichtbaren Komponente ihrer App. Das Aussehen dieser Komponente wird über eine Layout-Datei definiert. Diese Layouts finden sich als XML-Datei unter `res/layout` und werden innerhalb des *Activity*-Codes referenziert.
 
-### Ausführen des angelegten Projekts
+**Zwischenziel**: Der Quellcode der neu erstelle APp *Android Studio* wird in der Entwicklungsumgebung angezeigt.
+
+### Schritt 2: Ausführen des angelegten Projekts
 
 Sie können die erstellte Anwendung  direkt ausführen, indem sie Ihr Projekt über den grünen *Run*-Button in der Menüleiste (etwa in der Mitte) starten. Die Anwendung wird dann entweder auf einem angeschlossenen Android-Gerät oder einem *Virtual Device* ausgeführt. Sollten weder ein Gerät angeschlossen noch ein Emulator verfügbar sein wird *Android Studio* sie auffordern, ein neues *Virtual Device* anzulegen.
 
 Ihre App wird nun auf dem Emulator oder dem angeschlossenen Gerät installiert und ausgeführt. Wenn Sie den Emulator nutzen, kann dessen Boot-Vorgang einige Minuten in Anspruch nehmen. Sie sollten anschließend ihre App und dort den Text *Hello world!* sehen.
 
-### Erste Modifikationen
+**Zwischenziel**: Ihre Anwendung wird auf einem emulierten Android-Gerät in der Entwicklungsumgebung angezeigt.
 
-Schauen Sie sich nun die Datei `activity_main.xml` an. Hier finden Sie die Definition für das Textfeld, dass den *Hello world!*-Text beinhaltet. Der Text selber wird über das XML-Attribut `text` gesetzt. In diesem Beispiel wird der anzuzeigende Text direkt angegeben, kann aber auch durch einen Verweis auf eine Ressourcen-Datei angegeben werden. Ressourcen, auch Text, sollten in gesonderten Dateien und zentral gespeichert und dann von verschiedenen Stellen referenziert werden. Text-Bausteine werden in der Regel in der Datei `res/values/strings.xml` definiert. Öffnen Sie diese Datei, erstellen Sie einen zusätzlichen String-Eintrag mit dem Namen `my_new_string` und einem beliebigem Inhalt (Verwenden Sie als Vorlage den vorhandenen Eintrag für den Anwendungsnamen). Verwenden Sie diesen dann anstelle des "Hello World"-Texts in der Layout-Datei.
+### Schritt 3: Erste Modifikationen
+
+Schauen Sie sich nun die Datei `activity_main.xml` an, die sich links in der Dateiübersicht unter `res/layout` befindet. Wechseln Sie in die Code-Ansicht des Layout-Editors. Hier finden Sie die Definition für das Textfeld, dass den *Hello world!*-Text beinhaltet. Der Text selber wird über das XML-Attribut `text` gesetzt. In diesem Beispiel wird der anzuzeigende Text direkt angegeben, kann aber auch durch einen Verweis auf eine Ressourcen-Datei angegeben werden. Ressourcen, auch Text, sollten in gesonderten Dateien und zentral gespeichert und dann von verschiedenen Stellen referenziert werden. Text-Bausteine werden in der Regel in der Datei `res/values/strings.xml` definiert. Öffnen Sie diese Datei, erstellen Sie einen zusätzlichen String-Eintrag mit dem Namen `my_new_string` und einem beliebigem Inhalt (Verwenden Sie als Vorlage den vorhandenen Eintrag für den Anwendungsnamen). Verwenden Sie diesen dann anstelle des "Hello World"-Texts in der Layout-Datei. Führen Sie die Anwendung erneut auf dem Emulator aus, um den veränderten Text sichtbar zu machen.
 
 **Inhalt von `activity_main.xml` nach der ersten Modifikation**
 
 ``` xml
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin">
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-   <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/my_new_string"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_new_string"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-![Screenshot der ersten App](./docs/screenshot-u01-3-hello-world-app.png "Startbildschirm der ersten App")
+**Zwischenziel**: Ihre Anwendung wird auf einem emulierten Android-Gerät mit dem veränderten Text dargestellt.
 
-Startbildschirm der ersten App
+| Startbildschirm der ersten App |
+|:------:|
+| ![Screenshot der ersten App](./docs/screenshot-u01-3-hello-world-app.png "Startbildschirm der ersten App") |
